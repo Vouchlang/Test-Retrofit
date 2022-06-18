@@ -42,7 +42,11 @@ public class MainActivity extends AppCompatActivity {
                         ArrayList<Model.data> data = response.body().getData();
 
                         for(Model.data data1 : data){
-                            Log.e(TAG, "onResponse: emails: " + data1.getEmail());
+                            Log.e(TAG, "onResponse: id: " + data1.getId());
+                            Log.e(TAG, "onResponse: email: " + data1.getEmail());
+                            Log.e(TAG, "onResponse: first_name: " + data1.getFirst_name());
+                            Log.e(TAG, "onResponse: last_name: " + data1.getLast_name());
+                            Log.e(TAG, "onResponse: avatar: " + data1.getAvatar());
                         }
 
                     }
